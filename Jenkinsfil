@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git clone') {
             steps {
-                git "https://git.nagarro.com/GITG00641/Java/3167365/tree/master/AdvanceJava/AssignmentSpringRest/emlpoyee-RestAPI-master"
+                git "https://github.com/harmeetkaur7190/EmployeeManagement"
             }
         }
         stage('Maven clean') {
