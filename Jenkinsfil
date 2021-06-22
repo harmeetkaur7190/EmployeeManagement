@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    stages {
+        stage('Git clone') {
+            steps {
+                git "https://git.nagarro.com/GITG00641/Java/3167365/tree/master/AdvanceJava/AssignmentSpringRest/emlpoyee-RestAPI-master"
+            }
+        }
+        stage('Maven clean') {
+            steps {
+                bat "mvn clean"
+            }
+        }
+        stage('Maven install') {
+            steps {
+                bat "mvn install"
+            }
+        }
+        stage('Maven test') {
+            steps {
+                bat "mvn test"
+            }
+        }
+        stage('Maven package') {
+            steps {
+                bat "mvn package"
+            }
+        }
+    }
+}
