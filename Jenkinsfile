@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git clone') {
             steps {
-                git "https://github.com/harmeetkaur7190/EmployeeManagement"
+                git "https://github.com/harmeetkaur7190/EmployeeManagement.git"
             }
         }
         stage('Maven clean') {
