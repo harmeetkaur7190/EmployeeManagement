@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Git clone') {
+        stage('git repo and clean') {
             steps {
-                git "https://github.com/harmeetkaur7190/EmployeeManagement.git"
+               bat "git clone https://github.com/harmeetkaur7190/EmployeeManagement.git"
             }
         }
         stage('Maven clean') {
