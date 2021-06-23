@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('git repo and clean') {
+        stage('git repo & clean') {
             steps {
                bat "git clone https://github.com/harmeetkaur7190/EmployeeManagement.git"
             }
